@@ -35,7 +35,8 @@ function ListOfCourses() {
             course.map(course =>
             <div key={course.id} className='card shadow-lg col-6 col-md-3 m-4 '>
 
-              <img src={`/assets/${course.urlImg}`} alt={course.title} className="CourseImg" />
+            <img src={`/assets/${course.urlImg}`} alt={course.title} className="CourseImg" />
+
                     <p>Course Name: {course.courseName}</p>
                     <p>Trainer Name: {course.trainerName}</p>
                     <p>Duration: {course.duration}</p>

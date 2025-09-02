@@ -12,20 +12,14 @@ function App() {
 
   return (
     <>
-        <BrowserRouter>
-        <HeaderComponent/>
-       <Routes>
+       <BrowserRouter basename="/course-registration-sys">
+  <HeaderComponent />
+  <Routes>
+    <Route path="/" element={<ListOfCourses />} />
+    <Route path="/add-student/:id" element={<StudentComponent />} />
+  </Routes>
+</BrowserRouter>
 
-        <Route path='/' element={<ListOfCourses/>}></Route>
-        
-
-        <Route path='/add-student/:id' element={<StudentComponent/>}></Route>
-
-       </Routes>
-       
-      
-
-       </BrowserRouter>
     </>
   )
 }
